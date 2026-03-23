@@ -45,7 +45,7 @@ public class Principal
                 {
                     System.out.println("No se puede hacer la división entera, el divisor es 0");
                 }
-                else // SI el divisor es diferente a 0
+                else // Si el divisor es diferente a 0
                 {
                     int div = entero / divisor; // Se calcula la division entera
                     int resto = entero % divisor; //Calcula el resto de la división anterior
@@ -62,7 +62,7 @@ public class Principal
                 System.out.println("El archivo tiene otro formato.");
             }
         }
-    public static void leerEntradaStdin() {}
+    public static void leerEntradaStdin() {} //Por completar
 
     public static void main(String[] args) {
         System.out.println("Parte A: Lectura del archivo");

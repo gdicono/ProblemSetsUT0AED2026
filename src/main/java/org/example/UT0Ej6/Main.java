@@ -38,7 +38,7 @@ public class Main {
         System.out.println("El resultado es: " + resultado);
 
     }
-    private static void multiplicarArreglos(Scanner valor)
+    private static void multiplicarArreglos(Scanner valor) //Por completar
     {
         System.out.println("Prueba multiplicar con arreglos");
     }
