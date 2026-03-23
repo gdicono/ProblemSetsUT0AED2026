@@ -41,6 +41,30 @@ public class Main {
     private static void multiplicarArreglos(Scanner valor) //Por completar
     {
         System.out.println("Prueba multiplicar con arreglos");
+        int [] arreglo1 = leerArreglo (valor,1);
+        int [] arreglo2 = leerArreglo (valor,2);
+        if (!Multsuma.validarMultiplicacion(arreglo1, arreglo2)) {
+            System.out.println("Los arreglos no tienen el mismo tamaño");
+            return;
+        }
+        int [] resultado = Multsuma.multArreglo(arreglo1,arreglo2);
+        System.out.println("Resultado: ");
+        for (int i = 0; i < resultado.length; i++) {
+            System.out.println("Posición " + i + ": " + resultado[i]);
+        }
+
+    }
+
+    private static int[] leerArreglo(Scanner valor, int numArreglo)
+    {
+        System.out.println("Ingrese el valor del arreglo" +  numArreglo);
+        int largo = valor.nextInt();
+        int [] arreglo = new int[largo];
+        for (int i = 0; i < largo; i++) {
+            System.out.println("Ingrese el valor de la posición" + i + ":");
+            arreglo[i] = valor.nextInt();
+        }
+        return arreglo;
     }
 
 }
