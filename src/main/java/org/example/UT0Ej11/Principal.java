@@ -62,8 +62,7 @@ public class Principal
                 System.out.println("El archivo tiene otro formato.");
             }
         }
-    public static void leerEntradaStdin()
-    {}
+    public static void leerEntradaStdin() {}
 
     public static void main(String[] args) {
         System.out.println("Parte A: Lectura del archivo");
