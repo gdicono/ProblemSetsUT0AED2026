@@ -31,10 +31,11 @@ public class Principal
                     System.out.println("Se espera una cadena");
                     return;
                 }
+                n1.nextLine();
                 String cadena = n1.nextLine(); //Lee la cadena
 
                 double suma = entero + real; //Suma
-                int divisor = (int) real; //Convierte el número entero en real para hacer de divisor
+                int divisor = (int) real; //Convierte el número real en entero para hacer de divisor
 
                 System.out.println("Entero: " + entero); //Imprime el resultado
                 System.out.println("Real: " + real); //Imprime el resultado
@@ -58,18 +59,37 @@ public class Principal
             catch (FileNotFoundException e) {
                 System.out.println("No se encontró el archivo.");
             }
-            catch (NumberFormatException e) {
-                System.out.println("El archivo tiene otro formato.");
-            }
         }
-    public static void leerEntradaStdin() {} //Por completar
+    public static void leerEntradaStdin()
+    {
+        Scanner n2 = new Scanner(System.in);
+        try
+        {
+            System.out.println("Ingrese el radio:");
+            if (!n2.hasNextDouble()) {
+                System.out.println("Se espera un número real");
+                return;
+            }
+            double radio = n2.nextDouble();
+
+            if (radio < 0) {
+                System.out.println("El radio no puede ser negativo");
+                return;
+            }
+            double perimetro = Math.PI * radio;
+            System.out.println("Perimetro: " + perimetro);
+            double area = Math.PI * radio * radio;
+            System.out.println("Area: " + area);
+        }
+        finally{}
+    }
 
     public static void main(String[] args) {
         System.out.println("Parte A: Lectura del archivo");
         leerEntradaArchivo("entrada.txt");
 
         System.out.println("Parte B: Lectura desde el teclado");
-        //leerEntradaStdin();
+        leerEntradaStdin();
     }
 }
 
