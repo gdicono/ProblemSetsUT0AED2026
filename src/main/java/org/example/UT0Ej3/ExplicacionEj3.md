@@ -9,8 +9,7 @@ Se creó el menú utilizando switch, aparecen las 4 opciones para poder elegir e
 ![img_1.png](img_1.png)
 
 **Visualización al ejecutar cada opción del menú**
-
-![img.png](img.png)
+![img_2.png](img_2.png)
 
 Al seleccionar cada opción imprime cada valor del contador hasta llegar a 10.
 

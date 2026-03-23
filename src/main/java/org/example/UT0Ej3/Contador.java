@@ -41,5 +41,17 @@ public class Contador {
             System.out.println("For: " + contador); // Imprime el valor actual del contador
         }
     }
-    public static void staticInstancia() {} //Por completar
+    public static void staticInstancia()
+    {
+        Contador contador1 = new Contador(); // Se crea el primer objeto de la clase Contador
+        Contador contador2 = new Contador(); // Se crea el segundo objeto de la clase Contador
+
+        contador1.incremento = 2;
+        contador2.incremento = 3;
+
+        System.out.println("Valor de incremento en contador1: " + contador1.incremento);
+        System.out.println("Valor de incremento en contador2: " + contador2.incremento);
+        System.out.println("Total de objetos creados: " + Contador.totalObjetos);
+    }
+
 }
