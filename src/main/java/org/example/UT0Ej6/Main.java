@@ -41,8 +41,6 @@ public class Main {
     private static void multiplicarArreglos(Scanner valor)
     {
         System.out.println("Prueba multiplicar con arreglos");
-
-        int [] arreglo1 =
     }
 
 }
