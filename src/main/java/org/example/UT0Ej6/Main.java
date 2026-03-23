@@ -6,10 +6,12 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner valor = new Scanner(System.in);
-        multSumaconInt (valor);
-        multSumacondouble(valor);
+        multSumaconInt (valor); // Prueba multsuma con int
+        multSumacondouble(valor); // Prueba multsuma con double
+        multiplicarArreglos (valor);
     }
-    private static void multSumaconInt (Scanner valor)
+
+    private static void multSumaconInt (Scanner valor) // Método para pedir al usuario los valores con int
     {
         System.out.println("Prueba multsuma con int");
         System.out.println("Ingrese a: ");
@@ -22,7 +24,7 @@ public class Main {
         int resultado = Multsuma.multsuma(a, b, c);
         System.out.println("El resultado es: " + resultado);
     }
-    private static void multSumacondouble (Scanner valor)
+    private static void multSumacondouble (Scanner valor) // Método para pedir al usuario los valores con double
     {
         System.out.println("Prueba multsuma con double");
         System.out.println("Ingrese a: ");
@@ -35,6 +37,12 @@ public class Main {
         double resultado = Multsuma.multsuma(a, b, c);
         System.out.println("El resultado es: " + resultado);
 
+    }
+    private static void multiplicarArreglos(Scanner valor)
+    {
+        System.out.println("Prueba multiplicar con arreglos");
+
+        int [] arreglo1 =
     }
 
 }
